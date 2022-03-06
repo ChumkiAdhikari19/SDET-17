@@ -1,0 +1,33 @@
+package Practice;
+
+import java.util.LinkedHashSet;
+
+public class Pro {
+
+	public static void main(String[] args) {
+		String s = "wellcome to kolkata kolkata";
+		String[] str =s.split(" ");
+		
+		LinkedHashSet<String> set = new LinkedHashSet<String>();
+		 	for(int i=0; i<str.length; i++)
+		 	{
+		 		set.add(str[i]);
+		 	}
+		 	int duplicate=0;
+		 	for(String word:set) {
+		 		int count=0;
+		 		for(int i=0; i<str.length;i++) {
+		 			if(word.equals(str[i])){
+		 				count++;
+		 			}
+		 		}
+		 		if(count>1) {
+		 			duplicate++;
+		 		}
+		 		System.out.println(duplicate);
+		 	}
+		
+
+	}
+
+}

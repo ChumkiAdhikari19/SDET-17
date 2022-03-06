@@ -1,0 +1,68 @@
+ package ArrayProgramm;
+
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.List;
+
+public class RemoveDuplicateStoreList {
+
+	public static void main(String[] args) {
+		int [] ar= {1,5,1,5,6};
+		
+		// create Set collection to get only unique char
+		LinkedHashSet<Integer> set = new LinkedHashSet<Integer>();
+		
+		for(int i=0; i<ar.length; i++)
+		{
+			set.add(ar[i]);
+		}
+		
+		int n=ar.length;
+		List <Integer>li=new ArrayList<Integer>(n);
+		for(int i=0; i<ar.length;i++) {
+			
+			
+		}
+		
+		
+		
+		for (Integer in : set) {
+			System.out.println(in);
+		}
+		
+	}
+
+
+}
+
+
+
+/*import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
+
+public class Prac {
+
+	public static void main(String[] args) {
+		 
+		int [] ar= {1,6,9,1,6};
+	    
+	    Set<Integer> s = new HashSet<Integer>();
+	    for(int i=0;i<ar.length;i++) {
+	    s.add(ar[i]);
+	    }
+	    int n = s.size();
+	    List<Integer> aList = new ArrayList<Integer>(n);
+	    for (Integer x : s)
+	      aList.add(x);
+	  
+	    
+	    for (Integer x : aList)
+	      System.out.println(x);
+	  
+	    
+	  }
+	}*/
